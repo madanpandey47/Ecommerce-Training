@@ -1,1 +1,115 @@
 @import "tailwindcss";
+
+body {
+  background: #f8f9fa;
+  color: #2d3436;
+  transition: background 0.3s, color 0.3s;
+}
+.custom-dark {
+  background: #1a1b1e;
+  color: #e9ecef;
+}
+.navbar {
+  border-bottom: 1px solid #e9ecef;
+  background: #ffffff;
+}
+.custom-dark .navbar {
+  background: #2d2d32;
+  border-bottom: 1px solid #3d3d42;
+  color: #e9ecef;
+}
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+.navbar-logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.navbar-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+.navbar-links a {
+  color: #2d3436;
+  text-decoration: none;
+  font-size: 1rem;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-bottom 0.2s;
+}
+.navbar-links a.active-link,
+.navbar-links a:hover {
+  color: #0984e3;
+  border-bottom: 2px solid #0984e3;
+  transform: scale(1.2);
+}
+.custom-dark .navbar-links a {
+  color: #e9ecef;
+}
+.custom-dark .navbar-links a.active-link,
+.custom-dark .navbar-links a:hover {
+  color: #74b9ff;
+  border-bottom: 2px solid #74b9ff;
+}
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.navbar-search {
+  display: flex;
+  align-items: center;
+  background: #f1f3f5;
+  border-radius: 6px;
+  padding: 0.25rem 0.75rem;
+}
+.custom-dark .navbar-search {
+  background: #3d3d42;
+}
+.navbar-search-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: inherit;
+  width: 160px;
+  font-size: 1rem;
+  color: #2d3436;
+}
+.custom-dark .navbar-search-input {
+  color: #e9ecef;
+}
+.navbar-search-icon {
+  width: 20px;
+  height: 20px;
+  color: #636e72;
+  margin-left: 0.5rem;
+}
+.navbar-icon-btn,
+.navbar-toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+.navbar-icon-btn:hover,
+.navbar-toggle-btn:hover {
+  background: #f1f3f5;
+}
+.custom-dark .navbar-icon-btn:hover,
+.custom-dark .navbar-toggle-btn:hover {
+  background: #3d3d42;
+}
+.navbar-cart-icon,
+.navbar-toggle-icon {
+  width: 24px;
+  height: 24px;
+}
